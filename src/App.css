@@ -1,13 +1,25 @@
-.container{
+.container {
   max-width: 1500px;
   width: 80%;
   margin: 0 auto;
 }
 
-.grid{
+.grid {
   margin-top: 1.5rem;
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 3fr 1fr 0.01fr;
   grid-template-rows: 1fr;
-  grid-gap: 1.5rem;
+  grid-gap: 1rem;
+}
+
+.dialog-img {
+  width: 100%;
+}
+
+.hidden-inputs {
+  padding: 1.2rem 0;
+  display: grid;
+  grid-template-columns: repeat(5, 3fr);
+  grid-template-rows: 1fr;
+  grid-gap: 1rem;
 }

@@ -23,8 +23,8 @@ class Search extends Component {
     searchText: '',
     amount: 10,
     apiURL: 'https://pixabay.com/api',
-    apiKey: '4405337-03fb01f28d909b34b671703bf',
-    safeSearch: true,
+    apiKey: 'Secret',
+    safeSearch: false,
     imageType: 'all',
     checked: false,
     orientation: 'all',
@@ -195,7 +195,6 @@ class Search extends Component {
                   <Switch
                     onChange={this.handleSafeSearchChange}
                     value={this.state.safeSearch}
-                    checked={true}
                     color='primary'
                   />
                 }
